@@ -1,1 +1,25 @@
+public class Bubble {
 
+	public static void main(String[] args) {
+  
+		int nums[] = new int[] { 7, 5, 3, 8, 4, 2, 1, 0, 9, 6 };
+		int a, b, t, i;
+
+		for (a = 1; a < nums.length; a++) {
+    
+			for (b = nums.length - 1; b >= a; b--) {
+      
+				if (nums[b - 1] > nums[b]) {
+   
+					t = nums[b - 1];
+					nums[b - 1] = nums[b];
+					nums[b] = t;
+				}
+        
+			}
+      
+		}
+    
+	}
+  
+}
